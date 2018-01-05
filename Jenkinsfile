@@ -10,8 +10,6 @@ node {
     stage('Build image') {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
-        echo 'Which user runs this node'
-        echo $(whoami)
         app = docker.build("getintodevops/hellonode")
     }
 
