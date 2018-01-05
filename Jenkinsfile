@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
         echo 'Which user runs this node'
-        println `whoami'.execute().text`
+        println whoami.execute().text
         app = docker.build("getintodevops/hellonode")
     }
 
