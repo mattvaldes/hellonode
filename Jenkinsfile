@@ -14,12 +14,9 @@ node {
     }
 
     stage('Test image') {
-        /* Ideally, we would run a test framework against our image.
-         * For this example, we're using a Volkswagen-type approach ;-) */
-
         /*app.inside {
          *   echo "Tests passed"
-        * } */
+         *} */
         curl -s "https://blackducksoftware.github.io/hub-detect/hub-detect.sh"
         sh hub-detect.sh
         /* hub_detect */
