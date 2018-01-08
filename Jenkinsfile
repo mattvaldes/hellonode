@@ -20,7 +20,7 @@ node {
         /*app.inside {
          *   echo "Tests passed"
         * } */
-        bash < "curl -s https://blackducksoftware.github.io/hub-detect/hub-detect.sh" */
+        bash < "curl -s https://blackducksoftware.github.io/hub-detect/hub-detect.sh"
         /* hub_detect */
     }
 
