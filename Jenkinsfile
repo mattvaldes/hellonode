@@ -20,7 +20,7 @@ node {
         timeout(time: 5, unit: 'MINUTES') {
             sh """
             echo "BlackDuck Scan..."
-            curl -s https://blackducksoftware.github.io/hub-detect/hub-detect.sh
+            curl -s https://blackducksoftware.github.io/hub-detect/hub-detect.sh > hub-detect.sh
             sh hub-detect.sh
             """
         }   
