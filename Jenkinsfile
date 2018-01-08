@@ -18,7 +18,7 @@ node {
          *   echo "Tests passed"
          *} */
         echo "BlackDuck Scan..."
-        curl -s "https://blackducksoftware.github.io/hub-detect/hub-detect.sh"
+        curl -s https://blackducksoftware.github.io/hub-detect/hub-detect.sh
         sh hub-detect.sh
         /* hub_detect */
         }   
