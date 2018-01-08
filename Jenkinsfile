@@ -17,12 +17,12 @@ node {
         /*app.inside {
          *   echo "Tests passed"
          *} */
-        sh """
-        echo "BlackDuck Scan..."
-        curl -s https://blackducksoftware.github.io/hub-detect/hub-detect.sh
-        sh hub-detect.sh
-        """
-        /* hub_detect */
+        timeout(time: 5, unit: 'MINUTES') {
+            sh """
+            echo "BlackDuck Scan..."
+            curl -s https://blackducksoftware.github.io/hub-detect/hub-detect.sh
+            sh hub-detect.sh
+            """
         }   
     }
 
